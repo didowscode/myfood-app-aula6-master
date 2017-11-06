@@ -4,7 +4,7 @@
 
 ### Clonando o Repositório
 
-`git clone https://github.com/didowscode/myfood-app-starter-master.git`
+`git clone https://github.com/didowscode/myfood-app-aula6-master.git`
 
 ### Instalando as Dependências
 
