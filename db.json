@@ -1,0 +1,489 @@
+{
+  "restaurants": [
+    {
+      "id": "burger-spot",
+      "name": "Burger Spot",
+      "category": "Fast-Food",
+      "deliveryEstimate": "25m",
+      "rating": 4.5,
+      "imagePath": "assets/img/restaurants/burger.png",
+      "about": "A Burger Spot, é especializada em comida Fast-Food. E terá o prazer em saciar sua fome!",
+      "hours": "Funciona de segunda à sexta, de 19h às 00h"
+    },
+    {
+      "id": "grills-barbecue-and-bar",
+      "name": "Grills Barbecue and Bar",
+      "category": "Restaurante",
+      "deliveryEstimate": "40-65m",
+      "rating": 4.5,
+      "imagePath": "assets/img/restaurants/grills.png",
+      "about": "A casa mais tradicional da cidade, peça já seu prato.",
+      "hours": "Funciona todos os dias, de 10h às 23h"
+    },
+    {
+      "id": "hotchicken",
+      "name": "Hot Chicken",
+      "category": "Galeto",
+      "deliveryEstimate": "40-55m",
+      "rating": 4.5,
+      "imagePath": "assets/img/restaurants/hotchicken.png",
+      "about": "Especializados em galetos e comida italiana.",
+      "hours": "Funciona de segunda à sábado, de 11h às 00h"
+    },
+    {
+      "id": "organic-shop",
+      "name": "Organic Shop - 100% Natural",
+      "category": "Saudável",
+      "deliveryEstimate": "20m",
+      "rating": 4.1,
+      "imagePath": "assets/img/restaurants/organic.png",
+      "about": "Comida saudável é na Organic Shop. Comida 100% natural, direto do produto.",
+      "hours": "Somente em horário de almoço, das 11h às 15h"
+    },
+    {
+      "id": "mexican",
+      "name": "Mexican Food Truck",
+      "category": "Mexicana",
+      "deliveryEstimate": "40-65m",
+      "rating": 3.5,
+      "imagePath": "assets/img/restaurants/mexican.png",
+      "about": "Arriba Muchacho!!! Comida apimentada é com a gente.",
+      "hours": "Funciona todos os dias, de 10h às 1h"
+    },
+    {
+      "id": "pizza-time",
+      "name": "Pizza Time",
+      "category": "Pizza",
+      "deliveryEstimate": "40-65m",
+      "rating": 4.3,
+      "imagePath": "assets/img/restaurants/pizza.png",
+      "about": "HUMMM!! Esse cheirinho é da nossa deliciosa pizza, peça logo!!",
+      "hours": "Funciona de segunda à sábado, de 8h às 23h"
+    }
+  ],
+  "menu": [
+    {
+      "id": "x-salada",
+      "imagePath": "assets/img/foods/salada.png",
+      "name": "X-Salada",
+      "description": "Tradicional X-Salada que você respeita",
+      "price": 18,
+      "restaurantId": "burger-spot"
+    },
+    {
+      "id": "misto-quente",
+      "imagePath": "assets/img/foods/misto.png",
+      "name": "Misto quente da casa",
+      "description": "Delicioso Misto quente, com o toque especial da casa",
+      "price": 12,
+      "restaurantId": "burger-spot"
+    },
+    {
+      "id": "fritas",
+      "imagePath": "assets/img/foods/fritas.png",
+      "name": "Fritas",
+      "description": "Aquela batata-frita que vai matar sua fome",
+      "price": 8,
+      "restaurantId": "burger-spot"
+    },
+    {
+      "id": "coke",
+      "imagePath": "assets/img/foods/coke.png",
+      "name": "Refrigerante",
+      "description": "O refri mais gelado da cidade.",
+      "price": 4.5,
+      "restaurantId": "burger-spot"
+    },
+    {
+      "id": "contrafile",
+      "imagePath": "assets/img/foods/sirloin.png",
+      "name": "Contra-filé grelhado",
+      "description": "Tradicional cappuccino com chantilly",
+      "price": 32,
+      "restaurantId": "grills-barbecue-and-bar"
+    },
+    {
+      "id": "terdeloin",
+      "imagePath": "assets/img/foods/tenderloin.png",
+      "name": "Tenderloin",
+      "description": "O tradicional Beef Terndeloin, com nosso tempero especial.",
+      "price": 56.5,
+      "restaurantId": "grills-barbecue-and-bar"
+    },
+    {
+      "id": "tbone",
+      "imagePath": "assets/img/foods/tbone.png",
+      "name": "T-Bone",
+      "description": "Delicioso T-Bone, acompanha batatas e arroz.",
+      "price": 70.6,
+      "restaurantId": "grills-barbecue-and-bar"
+    },
+    {
+      "id": "zlasagna",
+      "imagePath": "assets/img/foods/zlasagna.png",
+      "name": "Lasanha de espinafre",
+      "description": "Deliciosa lasanha de espinafre, super saudável.",
+      "price": 45.9,
+      "restaurantId": "organic-shop"
+    },
+    {
+      "id": "cenoura",
+      "imagePath": "assets/img/foods/cenoura.png",
+      "name": "Suco de cenoura",
+      "description": "Saboroso suco de cenoura.",
+      "price": 10.5,
+      "restaurantId": "organic-shop"
+    },
+    {
+      "id": "abacate",
+      "imagePath": "assets/img/foods/abacate.png",
+      "name": "Suco de abacate",
+      "description": "O melhor suco de abacate da vida!!!",
+      "price": 12,
+      "restaurantId": "organic-shop"
+    },
+    {
+      "id": "galeto",
+      "imagePath": "assets/img/foods/galeto.png",
+      "name": "Galeto da casa",
+      "description": "O Galeto mais charmoso da cidade, saborei essa delicia!",
+      "price": 43.5,
+      "restaurantId": "hotchicken"
+    },
+    {
+      "id": "nuggets",
+      "imagePath": "assets/img/foods/nuggets.png",
+      "name": "Nuggets",
+      "description": "Saboroso nuggets de frango.",
+      "price": 24.5,
+      "restaurantId": "hotchicken"
+    },
+    {
+      "id": "chicken-crispy-strips",
+      "imagePath": "assets/img/foods/crispy.png",
+      "name": "Chicken Crispy Strips",
+      "description": "Deliciosas tiras de frango crocrantes, acompanha molho a sua escolha.",
+      "price": 30.5,
+      "restaurantId": "hotchicken"
+    },
+    {
+      "id": "burrito",
+      "imagePath": "assets/img/foods/burrito.png",
+      "name": "Burritos",
+      "description": "Direto do méxico, nosso burrito é o mais saboroso que você vai comer.",
+      "price": 15.5,
+      "restaurantId": "mexican"
+    },
+    {
+      "id": "tortilhas",
+      "imagePath": "assets/img/foods/tortilha.png",
+      "name": "tortilha",
+      "description": "A tortilla ou \"tortilha mexicana\" é um género de pão folha, confecionado a partir de farinha de milho ou de trigo. A nossa é a melhor fora do méxico.",
+      "price": 20.5,
+      "restaurantId": "mexican"
+    },
+    {
+      "id": "coke",
+      "imagePath": "assets/img/foods/coke.png",
+      "name": "Refrigerante",
+      "description": "O refri mais gelado da cidade.",
+      "price": 4.5,
+      "restaurantId": "mexican"
+    },
+    {
+      "id": "calabresa",
+      "imagePath": "assets/img/foods/calabresa.png",
+      "name": "Calabresa da casa",
+      "description": "Pizza de calabresa com tempero especial da casa",
+      "price": 45,
+      "restaurantId": "pizza-time"
+    },
+    {
+      "id": "bacon",
+      "imagePath": "assets/img/foods/pizzabacon.png",
+      "name": "BaconTOP",
+      "description": "Tiras de bacon suculentas para deixar sua pizza ainda melhor",
+      "price": 50,
+      "restaurantId": "pizza-time"
+    }
+  ],
+  "reviews": [
+    {
+      "name": "Julia",
+      "date": "2017-01-23T18:25:43",
+      "rating": 4.5,
+      "comments": "Tudo muito bom, entrega no tempo certo",
+      "restaurantId": "burger-spot"
+    },
+    {
+      "name": "Aline",
+      "date": "2016-12-12T18:25:43",
+      "rating": 3,
+      "comments": "NÃO recomendo.",
+      "restaurantId": "burger-spot"
+    },
+    {
+      "name": "Renata",
+      "date": "2016-12-12T18:25:43",
+      "rating": 2,
+      "comments": "Não foi muito agradável ao nosso paladar, e eu e meu esposo no outro dia passamos super mal. Pode até ter sido outra coisa, mas...",
+      "restaurantId": "burger-spot"
+    },
+    {
+      "name": "Renata",
+      "date": "2016-12-12T18:25:43",
+      "rating": 5,
+      "comments": "Nunca deixou na mão, comida sempre deliciosa.",
+      "restaurantId": "burger-spot"
+    },
+    {
+      "name": "Daniela",
+      "date": "2017-01-23T18:25:43",
+      "rating": 4,
+      "comments": "Carne muito boa! Já pedi diversas vezes sempre bom!",
+      "restaurantId": "grills-barbecue-and-bar"
+    },
+    {
+      "name": "Laila",
+      "date": "2017-02-02T18:25:43",
+      "rating": 5,
+      "comments": "Melhor beef que já provei. Vai ser difícil voltar para outro restaurante",
+      "restaurantId": "grills-barbecue-and-bar"
+    },
+    {
+      "name": "Suzana",
+      "date": "2016-12-12T18:25:43",
+      "rating": 3.5,
+      "comments": "Meu prato chegou frio e todo desmontado =\\",
+      "restaurantId": "grills-barbecue-and-bar"
+    },
+    {
+      "name": "Eric",
+      "date": "2017-01-23T18:25:43",
+      "rating": 4.5,
+      "comments": "Excelente opção! Recomendo!",
+      "restaurantId": "hotchicken"
+    },
+    {
+      "name": "Amanda",
+      "date": "2017-02-02T18:25:43",
+      "rating": 2.5,
+      "comments": "Demorou muito e o frango veio gelado",
+      "restaurantId": "hotchicken"
+    },
+    {
+      "name": "Carla",
+      "date": "2016-12-12T18:25:43",
+      "rating": 4.8,
+      "comments": "Tudo perfeito. Entrega, embalagem, comida. Resultado? Melhor custo beneficio",
+      "restaurantId": "hotchicken"
+    },
+    {
+      "name": "Rodrigo",
+      "date": "2016-12-12T18:25:43",
+      "rating": 4,
+      "comments": "Muito rápida a entrega, mas é caro.",
+      "restaurantId": "hotchicken"
+    },
+    {
+      "name": "André",
+      "date": "2016-12-12T18:25:43",
+      "rating": 4.5,
+      "comments": "Excelente como sempre!",
+      "restaurantId": "hotchicken"
+    },
+    {
+      "name": "João",
+      "date": "2017-01-23T18:25:43",
+      "rating": 5,
+      "comments": "Excelente. Fiz o pedido com outro endereço e quando vi o erro liguei avisando. O motoqueiro cortou a cidade todinha e a comida ainda chegou quentinha (e deliciosa). Estou sempre pedindo e recomendando",
+      "restaurantId": "organic-shop"
+    },
+    {
+      "name": "Marcelo",
+      "date": "2017-02-02T18:25:43",
+      "rating": 4.5,
+      "comments": "Chegou muito rápido, antes mesmo da previsão",
+      "restaurantId": "organic-shop"
+    },
+    {
+      "name": "Fatinha",
+      "date": "2017-01-23T18:25:43",
+      "rating": 2,
+      "comments": "Ñ gostei dos sabores q pedi e achei o preço muito elevado",
+      "restaurantId": "organic-shop"
+    },
+    {
+      "name": "Lucas",
+      "date": "2017-02-02T18:25:43",
+      "rating": 2.5,
+      "comments": "Esperar 1:45hr pra receber o pedido é INACEITÁVEL",
+      "restaurantId": "organic-shop"
+    },
+    {
+      "name": "Jacira",
+      "date": "2017-02-01T18:25:43",
+      "rating": 4.5,
+      "comments": "Veio OK!",
+      "restaurantId": "mexican"
+    },
+    {
+      "name": "Ana",
+      "date": "2017-01-23T18:25:43",
+      "rating": 5,
+      "comments": "Rápido e sempre uma delicia!! Ja pedi 3x e sempre veio rapido e tudo certinho.",
+      "restaurantId": "mexican"
+    },
+    {
+      "name": "Larissa",
+      "date": "2017-02-02T18:25:43",
+      "rating": 2.5,
+      "comments": "A taxa de entrega poderia ser mais barata.",
+      "restaurantId": "mexican"
+    },
+    {
+      "name": "Jarbas",
+      "date": "2016-12-15T18:25:43",
+      "rating": 4.7,
+      "comments": "Excelente e chegou muito rápido!",
+      "restaurantId": "pizza-time"
+    },
+    {
+      "name": "Rafaela",
+      "date": "2017-01-12T18:25:43",
+      "rating": 5,
+      "comments": "Chegou rápido e perfeito!",
+      "restaurantId": "pizza-time"
+    },
+    {
+      "name": "Julia",
+      "date": "2016-12-12T18:25:43",
+      "rating": 1.5,
+      "comments": "Sempre gostei muito dos pedidos que eu fiz, mas dessa vez foi péssimo e decepcionou muito. Demorou 30min a mais pra chegar do que o tempo máximo esperado.",
+      "restaurantId": "pizza-time"
+    },
+    {
+      "name": "Marília",
+      "date": "2016-12-20T18:25:43",
+      "rating": 4.5,
+      "comments": "Taxa de entrega bastante elevada e precisa colocar",
+      "restaurantId": "pizza-time"
+    }
+  ],
+  "orders": [
+    {
+      "address": "adasdasd",
+      "number": "232",
+      "optional": "das",
+      "paymentMethod": "DIN",
+      "orderItems": [
+        {
+          "quantity": 3,
+          "menuId": "x-salada"
+        },
+        {
+          "quantity": 1,
+          "menuId": "misto-quente"
+        },
+        {
+          "quantity": 1,
+          "menuId": "fritas"
+        },
+        {
+          "quantity": 1,
+          "menuId": "coke"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "address": "Rua Luiz Fagundes",
+      "number": "2367",
+      "optional": "Casa",
+      "paymentOption": "DIN",
+      "items": [
+        {
+          "quantity": 1,
+          "menuId": "x-salada"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "address": "sasas",
+      "number": "1223",
+      "optional": "xaxa",
+      "paymentOption": "DIN",
+      "items": [
+        {
+          "quantity": 1,
+          "menuId": "x-salada"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "address": "sdfsdfsd",
+      "number": "1234",
+      "optional": "",
+      "paymentOption": "DIN",
+      "items": [
+        {
+          "quantity": 5,
+          "menuId": "x-salada"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "address": "sdfsdfsd",
+      "number": "1234",
+      "optional": "",
+      "paymentOption": "DIN",
+      "items": [
+        {
+          "quantity": 5,
+          "menuId": "x-salada"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "address": "Rua Joao pessoa",
+      "number": "90",
+      "optional": "Casa",
+      "paymentOption": "DIN",
+      "items": [
+        {
+          "quantity": 1,
+          "menuId": "x-salada"
+        },
+        {
+          "quantity": 1,
+          "menuId": "misto-quente"
+        }
+      ],
+      "id": 6
+    },
+    {
+      "name": "dcdsafasdfds",
+      "email": "rs.acacio@gmail.com",
+      "emailConfirmation": "rs.acacio@gmail.com",
+      "address": "sdoiajsdoisajd",
+      "number": "2323",
+      "optional": "sadoijasiod",
+      "paymentOption": "DIN",
+      "items": [
+        {
+          "quantity": 2,
+          "menuId": "x-salada"
+        },
+        {
+          "quantity": 3,
+          "menuId": "misto-quente"
+        }
+      ],
+      "id": 7
+    }
+  ]
+}

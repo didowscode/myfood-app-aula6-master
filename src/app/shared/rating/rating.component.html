@@ -1,0 +1,6 @@
+<i (click)="setValue(r)"
+      (mouseenter)="setPreviousRate(r)"
+      (mouseleave)="clearPreviousRate()"
+      *ngFor="let r of rating" class="fa"
+      [class.fa-star]="r <= rate"
+      [class.fa-star-o]="r > rate">

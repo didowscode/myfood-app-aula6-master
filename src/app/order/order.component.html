@@ -1,0 +1,111 @@
+<section class="content-header">
+</section>
+
+<section class="content">
+  <section class="invoice">
+        {{ orderForm.valid }}
+        {{ orderForm.value | json }}
+        <form [formGroup]="orderForm">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2 class="page-header">
+                <i class="fa fa-shopping-cart"></i> Finalize o seu pedido
+              </h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-9">
+              <p class="lead">Dados pessoais:</p>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+              <span class="help-block pull-right has-error-block"
+                  *ngIf="orderForm.hasError('matchEmailError')">
+                      <i class="fa fa-remove"></i> E-mails não conferem
+              </span>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+              <mf-input-container label="Nome" errorMessage="Campo obrigatório e no mínimo 5">
+                <input type="text" placeholder="Nome" class="form-control" formControlName="name"/>
+              </mf-input-container>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+              <mf-input-container label="E-mail" errorMessage="E-mail inválido">
+                <input type="text" class="form-control" id="inputSuccess" placeholder="E-mail" formControlName="email">
+              </mf-input-container>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+              <mf-input-container label="Confirmação de e-mail" errorMessage="Confirmação de e-mail inválido">
+                <input type="text" class="form-control" id="inputSuccess" placeholder="Confirmação de e-mail" formControlName="emailConfirmation">
+              </mf-input-container>
+            </div>
+            <!-- /.col -->
+          </div>
+          <div class="row invoice-info">
+            <div class="col-xs-12">
+              <p class="lead">Endereço de Entrega:</p>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+              <mf-input-container label="Endereço" errorMessage="Campo obrigatório e no mínimo 5">
+                <input type="text" placeholder="Endereço" class="form-control" formControlName="address"/>
+              </mf-input-container>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+              <mf-input-container label="Número" errorMessage="Campo obrigatório e somente números">
+                <input type="text" class="form-control" id="inputSuccess" placeholder="Número" formControlName="number">
+              </mf-input-container>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+              <mf-input-container label="Complemento">
+                <input type="text" class="form-control" id="inputSuccess" placeholder="Complemento" formControlName="optional">
+              </mf-input-container>
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+
+          <!-- Table row -->
+          <div class="row">
+            <div class="col-xs-12">
+              <p class="lead">Itens do Pedido:</p>
+            </div>
+            <mf-order-item
+              [items]="listItems()"
+              (decreaseQty)="decreaseQty($event)"
+              (increaseQty)="increaseQty($event)"
+              (remove)="remove($event)"
+            >
+            </mf-order-item>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+
+          <div class="row">
+            <!-- accepted payments column -->
+            <div class="col-sm-6 col-xs-12">
+              <p class="lead">Formas de Pagamento:</p>
+
+                <div class="form-group">
+                  <mf-radio-option [options]="paymentOptions" formControlName="paymentOption"></mf-radio-option>
+
+                </div>
+
+            </div>
+            <!-- /.col -->
+            <div class="col-sm-6 col-xs-12">
+              <p class="lead">Frete e Total:</p>
+              <mf-delivery-costs [delivery]="delivery" [itemsValue]="total()"></mf-delivery-costs>
+            </div>
+            <!-- /.col -->
+          </div>
+
+        </form>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <button (click)="checkoutOrder(orderForm.value)" [disabled]="!orderForm.valid || listItems().length ===0" href="order-summary.html" class="btn btn-success pull-right"><i class="fa fa-credit-card"></i> Concluir Pedido
+            </button>
+          </div>
+        </div>
+
+    </section>
+</section>
